@@ -27,6 +27,7 @@ class Shared_PrefPage extends StatelessWidget {
                 ElevatedButton(
                   onPressed: () {
                     prefs.setString('userid', ctl.text);
+                    Navigator.pop(context);
                   },
                   child: Text("Save to pref"),
                 ),

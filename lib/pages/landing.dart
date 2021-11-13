@@ -66,7 +66,9 @@ class _LandingPageState extends State<LandingPage> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => HttpHomePage(),
+                      builder: (context) => HttpHomePage(
+                        provinceID: '1',
+                      ),
                     ),
                   );
                 },

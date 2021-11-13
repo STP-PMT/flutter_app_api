@@ -14,8 +14,7 @@ void main() {
       ChangeNotifierProvider(
         create: (context) => Appdata(),
       )
-    ],
-    child: const MyApp(),
+    ],child: const MyApp(),
   ));
 }
 

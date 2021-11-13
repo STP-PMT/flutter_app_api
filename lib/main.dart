@@ -1,12 +1,22 @@
 import 'dart:developer';
 
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_app_api/pages/landing.dart';
+import 'package:flutter_app_api/provider/appdata.dart';
+import 'package:provider/provider.dart';
 import 'package:yaml/yaml.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(
+    providers: [
+      ChangeNotifierProvider(
+        create: (context) => Appdata(),
+      )
+    ],
+    child: const MyApp(),
+  ));
 }
 
 Future loadConfig() async {

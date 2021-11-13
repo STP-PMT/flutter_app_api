@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app_api/pages/httphome.dart';
 import 'package:flutter_app_api/pages/providerhome.dart';
 import 'package:flutter_app_api/pages/shared_pref.dart';
+import 'package:flutter_app_api/pages/textform.dart';
 import 'package:flutter_app_api/provider/appdata.dart';
 
 class LandingPage extends StatefulWidget {
@@ -69,6 +70,19 @@ class _LandingPageState extends State<LandingPage> {
                       builder: (context) => HttpHomePage(
                         provinceID: '1',
                       ),
+                    ),
+                  );
+                },
+              ),
+            ),
+             Container(
+              child: ElevatedButton(
+                child: Text("Text form"),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => TextFormPage(),
                     ),
                   );
                 },

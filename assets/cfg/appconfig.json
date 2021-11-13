@@ -1,0 +1,11 @@
+{
+    "url": "http://localhost",
+    "server": {
+        "host": "202.28.34.197",
+        "post": 8880
+    },
+    "login": {
+        "username":"admin",
+        "password":"abc123"
+    }
+}

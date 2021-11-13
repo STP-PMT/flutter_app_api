@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_api/pages/providersecond.dart';
 import 'package:flutter_app_api/provider/appdata.dart';
 import 'package:provider/src/provider.dart';
 
@@ -14,7 +15,7 @@ class ProviderHomePage extends StatelessWidget {
           child: Text('Set Provider'),
           onPressed: () {
             UserProfile profile = UserProfile();
-            profile.name = "Siithipong";
+            profile.name = "Sithipong";
             profile.id = 1;
             profile.avatar = "image.png";
             profile.bDate = DateTime.now();
@@ -22,7 +23,7 @@ class ProviderHomePage extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => ProviderHomePage(),
+                builder: (context) => ProviderSecondPage(),
               ),
             );
           },
